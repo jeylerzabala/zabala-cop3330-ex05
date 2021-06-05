@@ -27,5 +27,35 @@ Break the program into functions that do the computations.
 Implement this program as a GUI program that automatically updates the values when any value changes.
 */
 
+import java.util.Scanner;
+
 public class App {
+    public static void main(String[] args) {
+
+        int firstNumber, secondNumber, sum, difference, product, quotient;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("What is the first number? ");
+        firstNumber = sc.nextInt();
+
+        Scanner sc2 = new Scanner(System.in);
+        System.out.print("What is the second number? ");
+        secondNumber = sc.nextInt();
+
+        sc.close();
+        sum = firstNumber + secondNumber;
+        difference = firstNumber - secondNumber;
+        product = firstNumber * secondNumber;
+        quotient = firstNumber / secondNumber;
+
+        String output1 = (firstNumber + " + " + secondNumber + " = " + sum);
+        String output2 = (firstNumber + " - " + secondNumber + " = " + difference);
+        String output3 = (firstNumber + " * " + secondNumber + " = " + product);
+        String output4 = (firstNumber + " / " + secondNumber + " = " + quotient);
+
+        System.out.println(output1 + "\n" + output2 + "\n" + output3 + "\n" + output4);
+
+    }
 }
+
+
