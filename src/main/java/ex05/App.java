@@ -1,6 +1,10 @@
 package ex05;
 
 /*
+
+*  UCF COP3330 Summer 2021 Assignment 1 Solution
+*  Copyright 2021 Jeyler Zabala
+
 Exercise 5 - Simple Math
 You’ll often write programs that deal with numbers. And depending on the programming language you use,
 you’ll have to convert the inputs you get to numerical data types.
@@ -38,7 +42,6 @@ public class App {
         System.out.print("What is the first number? ");
         firstNumber = sc.nextInt();
 
-        Scanner sc2 = new Scanner(System.in);
         System.out.print("What is the second number? ");
         secondNumber = sc.nextInt();
 
